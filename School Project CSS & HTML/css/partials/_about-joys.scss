@@ -1,0 +1,52 @@
+@use "./variables";
+
+body {
+    main {
+        .benefits {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+
+            li {
+                color: variables.$black;
+                font-weight: bold;
+                display: flex;
+                font-style: oblique;
+                background-color: variables.$light-gray;
+                border-radius: 0.9rem;
+                border-style: ridge;
+                padding: .5%;
+                margin: 1rem;
+                border-color: variables.$cool-gray;
+
+                &:hover {
+                    color: variables.$deep-purple-gray;
+                    transition: ease 1s;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+///        Media responsiveness
+
+@media only screen and (max-width: 760px) {
+    body {
+        main {
+            .benefits {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .race_private_track {
+        width: 100%;
+    }
+
+}

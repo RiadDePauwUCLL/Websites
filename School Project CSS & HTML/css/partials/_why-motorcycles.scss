@@ -1,0 +1,444 @@
+@use "./variables";
+
+body {
+    main {
+
+        #why-ride-text {
+            margin: 1%;
+            text-align: center;
+        }
+
+        #motorcycle_pics {
+
+            article {
+                display: grid;
+                column-gap: .5%;
+                margin: 1%;
+            }
+
+            blockquote {
+                align-self: center;
+                text-align: center;
+            }
+
+            .dinant {
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(1, auto);
+
+                img {
+                    padding: .5%;
+                }
+            }
+
+            .experience {
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(1, auto);
+
+                img {
+                    padding: .5%;
+                }
+            }
+
+            #journey-moto {
+                color: variables.$black;
+                font-style: oblique;
+                font-weight: bold;
+                background-color: variables.$light-gray;
+                border-radius: 0.9rem;
+                border-style: ridge;
+                border-color: variables.$cool-gray;
+                margin: .5%;
+                padding: .5%;
+                text-align: center;
+                grid-template-columns: repeat(1, auto);
+                grid-template-rows: repeat(1, auto);
+            }
+
+            .group-pics {
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(1, auto);
+
+                img {
+                    padding: .5%;
+                }
+            }
+
+            .france-pics {
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(1, auto);
+
+                img {
+                    padding: .5%;
+                }
+            }
+        }
+    }
+}
+
+///        Media responsiveness
+
+@media only screen and (min-width: 1653px) {
+    body {
+        main {
+            #why-ride-text {
+                font-size: 1.2rem;
+            }
+
+            #text-dinant {
+                font-size: 1.2rem;
+            }
+
+            #experience-text {
+                font-size: 1.2rem;
+            }
+
+            #group-text {
+                font-size: 1.2rem;
+            }
+
+            #france-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1653px) {
+    body {
+        main {
+            #group-text {
+                font-size: 1.1rem;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+        main {
+            #experience-text {
+                font-size: .98rem;
+            }
+
+            #group-text {
+                font-size: .98rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        main {
+            #motorcycle_pics {
+                .group-pics {
+                    grid-template-columns: repeat(2, auto);
+                    grid-template-rows: repeat(2, auto);
+                    justify-items: center;
+
+                    blockquote {
+                        grid-column: span 2;
+                        grid-row: 1;
+                    }
+
+                    .group-station {
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .group-antwerpen {
+                        grid-column: 2;
+                        grid-row: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1321px) {
+    body {
+        main {
+            #motorcycle_pics {
+                .dinant {
+                    grid-template-columns: repeat(1, auto);
+                    grid-template-rows: repeat(2, auto);
+                    justify-items: center;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .experience {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: repeat(2, auto);
+                    justify-items: center;
+
+                    .full-suit-bike {
+                        width: 80%;
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: span 2;
+                        grid-row: 1;
+                    }
+
+                    .pov-station {
+                        width: 80%;
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .salad-on-bike {
+                        width: 80%;
+                        grid-column: 2;
+                        grid-row: 2;
+                    }
+
+                    .bike-at-station {
+                        width: 80%;
+                        grid-column: 3;
+                        grid-row: 2;
+                    }
+                }
+
+                .france-pics {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: repeat(2, auto);
+                    justify-items: center;
+
+                    .paris {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: span 2;
+                        grid-row: 1;
+                    }
+
+                    .lille-front {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .lille-rear {
+                        width: 70%;
+                        grid-column: 2;
+                        grid-row: 2;
+                    }
+
+                    .south-france {
+                        width: 70%;
+                        grid-column: 3;
+                        grid-row: 2;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    body {
+        main {
+            #motorcycle_pics {
+                .group-pics {
+                    grid-template-columns: repeat(2, auto);
+                    grid-template-rows: repeat(3, auto);
+                    justify-items: center;
+
+                    blockquote {
+                        grid-column: span 2;
+                        grid-row: 2;
+                    }
+
+                    .group-station {
+                        width: 80%;
+                        grid-column: span 2;
+                        grid-row: 1;
+                    }
+
+                    .group-antwerpen {
+                        width: 80%;
+                        grid-column: span 2;
+                        grid-row: 3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    body {
+        main {
+            #motorcycle_pics {
+
+                .experience {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: repeat(3, auto);
+                    justify-items: center;
+
+                    .full-suit-bike {
+                        width: 70%;
+                        grid-column: span 3;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: span 3;
+                        grid-row: 2;
+                    }
+
+                    .pov-station {
+                        width: 80%;
+                        grid-column: 1;
+                        grid-row: 3;
+                    }
+
+                    .salad-on-bike {
+                        width: 80%;
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
+
+                    .bike-at-station {
+                        width: 80%;
+                        grid-column: 3;
+                        grid-row: 3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        main {
+            #motorcycle_pics {
+                .france-pics {
+                    grid-template-columns: repeat(3, auto);
+                    grid-template-rows: repeat(3, auto);
+                    justify-items: center;
+
+                    .paris {
+                        width: 70%;
+                        grid-column: span 3;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: span 3;
+                        grid-row: 2;
+                    }
+
+                    .lille-front {
+                        width: 80%;
+                        grid-column: 1;
+                        grid-row: 3;
+                    }
+
+                    .lille-rear {
+                        width: 80%;
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
+
+                    .south-france {
+                        width: 80%;
+                        grid-column: 3;
+                        grid-row: 3;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        main {
+            #motorcycle_pics {
+
+                .experience {
+                    grid-template-columns: repeat(1, auto);
+                    grid-template-rows: repeat(5, auto);
+                    justify-items: center;
+
+                    .full-suit-bike {
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .pov-station {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 3;
+                    }
+
+                    .salad-on-bike {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 4;
+                    }
+
+                    .bike-at-station {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 5;
+                    }
+                }
+
+                .france-pics {
+                    grid-template-columns: repeat(1, auto);
+                    grid-template-rows: repeat(5, auto);
+                    justify-items: center;
+
+                    .paris {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+
+                    blockquote {
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .lille-front {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 3;
+                    }
+
+                    .lille-rear {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 4;
+                    }
+
+                    .south-france {
+                        width: 70%;
+                        grid-column: 1;
+                        grid-row: 5;
+                    }
+                }
+            }
+        }
+    }
+}

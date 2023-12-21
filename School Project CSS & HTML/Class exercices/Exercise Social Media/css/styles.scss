@@ -1,0 +1,102 @@
+$variable-name: 3px;
+
+$small-screen: 900px;
+$medium-screen: 1400px;
+
+
+
+* {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 20rem;
+    }
+
+    nav {
+        flex-basis: 100%;
+
+        ul {
+            display:flex;
+            list-style: none;
+            font-size: 3rem;
+            justify-content: space-between;
+            
+            @media (max-width: $medium-screen) {
+                    font-size: 1rem;
+                    gap: 1rem;
+            }
+
+            @media (max-width: $small-screen) {
+                flex-direction: column;
+            }
+
+            li {
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+#hero {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/hero.jpg');
+}
+
+article {
+    margin-top: 2rem;
+}
+
+#grid-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1 fr;
+    gap: 2rem;
+}
+
+#form {
+    margin-bottom: 30px;
+
+    
+}
+
+#grid-container section {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#grid-container section:first-child {
+    grid-row: span 2;
+}
+
+#grid-container section:last-child {
+    grid-column: span 2;
+}
+
+#grid-container section:nth-child(4) {
+    background-color: blue;
+}

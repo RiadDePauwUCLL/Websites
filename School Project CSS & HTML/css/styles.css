@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+header {
+  background-color: #ECECEC;
+  border-style: ridge;
+  border-color: #AAABB8;
+  overflow: hidden;
+}
+header h1 {
+  font-size: 3rem;
+  transition: all 3s;
+  text-align: center;
+  color: #2C2C54;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  text-align: center;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+header nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-decoration-line: none;
+  transition: all 1.5s;
+}
+header nav ul li a:hover {
+  color: #474787;
+  transition: all 2s;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li a {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+body {
+  background-color: #2C2C54;
+  font-size: 1.1rem;
+  color: #ECECEC;
+}
+body main {
+  background-color: #474787;
+  font-weight: normal;
+  border-style: ridge;
+  border-color: #AAABB8;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  padding: 0.5rem;
+}
+body main img {
+  border-radius: 1.3rem;
+}
+body main figure figcaption {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  body main .motogp_event {
+    width: 100%;
+  }
+}
+body main .benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+body main .benefits li {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  display: flex;
+  font-style: oblique;
+  background-color: #ECECEC;
+  border-radius: 0.9rem;
+  border-style: ridge;
+  padding: 0.5%;
+  margin: 1rem;
+  border-color: #AAABB8;
+}
+body main .benefits li:hover {
+  color: #474787;
+  transition: ease 1s;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 760px) {
+  body main .benefits {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .race_private_track {
+    width: 100%;
+  }
+}
+body main #why-ride-text {
+  margin: 1%;
+  text-align: center;
+}
+body main #motorcycle_pics article {
+  display: grid;
+  -moz-column-gap: 0.5%;
+       column-gap: 0.5%;
+  margin: 1%;
+}
+body main #motorcycle_pics blockquote {
+  align-self: center;
+  text-align: center;
+}
+body main #motorcycle_pics .dinant {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+}
+body main #motorcycle_pics .dinant img {
+  padding: 0.5%;
+}
+body main #motorcycle_pics .experience {
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(1, auto);
+}
+body main #motorcycle_pics .experience img {
+  padding: 0.5%;
+}
+body main #motorcycle_pics #journey-moto {
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-weight: bold;
+  background-color: #ECECEC;
+  border-radius: 0.9rem;
+  border-style: ridge;
+  border-color: #AAABB8;
+  margin: 0.5%;
+  padding: 0.5%;
+  text-align: center;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(1, auto);
+}
+body main #motorcycle_pics .group-pics {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
+}
+body main #motorcycle_pics .group-pics img {
+  padding: 0.5%;
+}
+body main #motorcycle_pics .france-pics {
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(1, auto);
+}
+body main #motorcycle_pics .france-pics img {
+  padding: 0.5%;
+}
+
+@media only screen and (min-width: 1653px) {
+  body main #why-ride-text {
+    font-size: 1.2rem;
+  }
+  body main #text-dinant {
+    font-size: 1.2rem;
+  }
+  body main #experience-text {
+    font-size: 1.2rem;
+  }
+  body main #group-text {
+    font-size: 1.2rem;
+  }
+  body main #france-text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1653px) {
+  body main #group-text {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  body main #experience-text {
+    font-size: 0.98rem;
+  }
+  body main #group-text {
+    font-size: 0.98rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  body main #motorcycle_pics .group-pics {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .group-pics blockquote {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .group-pics .group-station {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .group-pics .group-antwerpen {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+@media only screen and (max-width: 1321px) {
+  body main #motorcycle_pics .dinant {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .dinant img {
+    width: 90%;
+  }
+  body main #motorcycle_pics .experience {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .experience .full-suit-bike {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .experience blockquote {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .experience .pov-station {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .experience .salad-on-bike {
+    width: 80%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .experience .bike-at-station {
+    width: 80%;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .france-pics {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .france-pics .paris {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .france-pics blockquote {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .france-pics .lille-front {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .france-pics .lille-rear {
+    width: 70%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .france-pics .south-france {
+    width: 70%;
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  body main #motorcycle_pics .group-pics {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .group-pics blockquote {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .group-pics .group-station {
+    width: 80%;
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .group-pics .group-antwerpen {
+    width: 80%;
+    grid-column: span 2;
+    grid-row: 3;
+  }
+}
+@media only screen and (max-width: 925px) {
+  body main #motorcycle_pics .experience {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .experience .full-suit-bike {
+    width: 70%;
+    grid-column: span 3;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .experience blockquote {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .experience .pov-station {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .experience .salad-on-bike {
+    width: 80%;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .experience .bike-at-station {
+    width: 80%;
+    grid-column: 3;
+    grid-row: 3;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body main #motorcycle_pics .france-pics {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .france-pics .paris {
+    width: 70%;
+    grid-column: span 3;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .france-pics blockquote {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .france-pics .lille-front {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .france-pics .lille-rear {
+    width: 80%;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .france-pics .south-france {
+    width: 80%;
+    grid-column: 3;
+    grid-row: 3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body main #motorcycle_pics .experience {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .experience .full-suit-bike {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .experience blockquote {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .experience .pov-station {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .experience .salad-on-bike {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  body main #motorcycle_pics .experience .bike-at-station {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 5;
+  }
+  body main #motorcycle_pics .france-pics {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    justify-items: center;
+  }
+  body main #motorcycle_pics .france-pics .paris {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body main #motorcycle_pics .france-pics blockquote {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main #motorcycle_pics .france-pics .lille-front {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main #motorcycle_pics .france-pics .lille-rear {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  body main #motorcycle_pics .france-pics .south-france {
+    width: 70%;
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+body main #socialmedia {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  justify-content: flex-start;
+}
+body main #socialmedia li a img {
+  width: 100%;
+  transition: all 1s;
+}
+body main #socialmedia li a img:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+body label,
+body #button,
+body #motobrand,
+body option {
+  font-weight: bold;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 0rem 2rem;
+  row-gap: 1rem;
+  align-items: flex-start;
+}
+body form label {
+  font-size: 0.9rem;
+  height: 1.5rem;
+  text-align: center;
+}
+body form input {
+  flex: 1;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 2rem;
+  box-sizing: border-box;
+  border-style: groove;
+}
+body form input::-moz-placeholder, body form textarea::-moz-placeholder {
+  color: #2C2C54;
+  opacity: 0.7;
+}
+body form input::placeholder,
+body form textarea::placeholder {
+  color: #2C2C54;
+  opacity: 0.7;
+}
+body form #name,
+body form #email,
+body form #phone_number,
+body form #questions {
+  display: flex;
+  width: 100%;
+}
+body form #questions {
+  height: 3rem;
+}
+body form #button {
+  width: 5rem;
+  height: 2rem;
+  background-color: #AAABB8;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+body form #button:hover {
+  color: #474787;
+  background-color: #ECECEC;
+  transition: all 1s;
+  transform: scale(1.2);
+}
+body form #motobrand {
+  font-size: 0.7rem;
+  text-align: center;
+  width: 5.2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body main .south_dinant {
+    width: 100%;
+  }
+}
+body ol, body ul {
+  padding: 0;
+}
+body .sitespec-titles {
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  background-color: #ECECEC;
+  border-radius: 0.9rem;
+  border-style: ridge;
+  border-color: #AAABB8;
+  padding: 0.5%;
+  display: inline-flex;
+}
+
+footer {
+  font-weight: bold;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #FFF;
+  padding: 0% 1.5% 0% 1.5%;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  font-family: "Quicksand", serif;
+  line-height: normal;
+  list-style-type: none;
+}/*# sourceMappingURL=styles.css.map */

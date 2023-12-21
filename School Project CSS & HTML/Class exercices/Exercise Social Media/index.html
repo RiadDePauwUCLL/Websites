@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Social Media</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.jpg" alt="Website logo">
+
+        <nav>
+            <ul>
+                <li><a href="">X</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Facebook</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article id="hero">
+            <h1>Social Media</h1>
+        </article>
+
+        <article id="grid-container">
+            <section>
+                <h2>X</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, necessitatibus.</p>
+            </section>
+
+            <section>
+                <h2>Instagram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, necessitatibus.</p>
+            </section>
+
+            <section>
+                <h2>Telegram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, necessitatibus.</p>
+            </section>
+
+            <section>
+                <h2>Facebook</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, totam!</p>
+            </section>
+        </article>
+
+        <article id="form"> <!--there are two ways of combining labels & inputs. The first one is the most recommended and cleaner.-->
+            <form action="index.html" method="post">
+                <label for="name">Name:</label>
+                <input 
+                id="name" 
+                type="text" 
+                required="true" 
+                pattern="Name"
+                title="Enter your name">
+
+                <label for="age">Age:</label>
+                    <input 
+                    type="number" 
+                    id="age"
+                    min="16"
+                    max="60"
+                    title="Put in your age"> <!--Here it's not required, so you can leave it blank & submit the form.-->
+
+                <label>Email:
+                    <input type="email" id="email" required="true">
+                </label>    
+                
+                <button>Submit</button> <!--Two different ways of making a button.-->
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; Riad De Pauw 2023</p>
+    </footer>
+</body>
+
+</html>
+

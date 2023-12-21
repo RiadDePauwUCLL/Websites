@@ -1,0 +1,18 @@
+@use "partials/header";
+@use "partials/variables";
+@use "partials/main";
+@use "partials/index";
+@use "partials/about-joys";
+@use "partials/why-motorcycles";
+@use "partials/contact-info";
+@use "partials/sitespec";
+@use "partials/footer";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+//whole-site
+* {
+    font-family: 'Quicksand', serif;
+    line-height: normal;
+    list-style-type: none;
+}
+

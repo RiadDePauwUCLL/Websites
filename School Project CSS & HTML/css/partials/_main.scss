@@ -1,0 +1,29 @@
+@use "./variables";
+    // dark indigo #2C2C54, deep purple-gray #474787, cool gray #AAABB8, light gray #ECECEC
+body {
+    background-color: variables.$dark-indigo;
+    font-size: 1.1rem;
+    color: variables.$light-gray;
+
+    main {
+        background-color: variables.$deep-purple-gray;
+        font-weight: normal;
+        border-style: ridge;
+        border-color: variables.$cool-gray;
+        border-bottom-left-radius: 0.9rem;
+        border-bottom-right-radius: 0.9rem;
+        padding: .5rem;
+
+        //all-images
+        img {
+            border-radius: 1.3rem;
+        }
+
+        //all-figcaptions
+        figure {
+            figcaption {
+                font-style: italic;
+            }
+        }
+    }
+}

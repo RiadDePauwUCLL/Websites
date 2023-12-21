@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/mybikeyes.ico" type="image/icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contact Information</title>
+</head>
+
+<body>
+    <header>
+        <h1>Freedom & Motorcycles</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../site/index.html">Homepage</a></li>
+                <li><a href="/pages/about-joys.html">Benefits of riding a motorcycle</a></li>
+                <li><a href="/pages/why-motorcycles.html">Why Motorcycles?</a></li>
+                <li><a href="/pages/contact-info.html">Contact Information</a></li>
+                <li><a href="../sitespec.html">Site Specifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Here you'll find ways to contact me through social media.</h2>
+            <ul id="socialmedia">
+                <li><a href="https://www.instagram.com/simon_dpx/"><img src="../images/instagram_icon.png"
+                            alt="Instagram icon" class="socials"></a></li>
+                <li><a href="https://steamcommunity.com/id/s1-x/"><img src="../images/steam_icon.png" alt="Steam icon"
+                            class="socials"></a></li>
+            </ul>
+        </article>
+
+        
+        <h3>
+            Use my contact form if you have any particular questions.
+            Don't forget to also pick your favorite motorcycle brand within my form below. 8)
+        </h3>
+
+        <form action="contact-info.html" method="post">
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Simon" id="name" style="resize: both;" name="name" title="Fill in your name." required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="monke@gmail.com" id="email" style="resize: both;" name="email" title="Fill in your email." required>
+            </div>
+
+            <div>
+                <label for="phone_number">Phone Number</label>
+                <input type="text" placeholder="+32489271867" id="phone_number" style="resize: both;" name="phone_number"
+                    title="Type in here your phone number if you wish me to be contacted through phone.">
+            </div>
+
+            <div>
+                <label for="questions">Questions</label>
+                <textarea placeholder="Have you ever ridden on track?" id="questions" name="questions" style="resize: both;"></textarea>
+            </div>
+
+
+                <label for="motobrand">Your Favorite Motorcycle Brand</label>
+                <select id=motobrand name="Motorcycle brand">
+                    <option value="Yamaha">Yamaha</option>
+                    <option value="French">Kawasaki</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="KTM">KTM</option>
+                    <option value="Harley Davidson">Harley Davidson</option>
+                    <option value="Ducati">Ducati</option>
+                </select>
+
+
+            <button id="button" type="button">Submit</button>
+        </form>
+
+        <figure>
+            <img src="/images/img_20230924_181016.jpg" alt="picture close to Dinant" class="south_dinant">
+            <figcaption>This picture was taken around the south of Belgium, close to Dinant.</figcaption>
+        </figure>
+
+    </main>
+
+    <footer>
+        <p id="copyright">&copy;Riad De Pauw 2023</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@use "./variables";
+@use "./main";
+
+body {
+    ol, ul {
+        padding: 0;
+    }
+
+    .sitespec-titles {
+        color: variables.$black;
+        font-style: oblique;
+        background-color: variables.$light-gray;
+        border-radius: 0.9rem;
+        border-style: ridge;
+        border-color: variables.$cool-gray;
+        padding: .5%;
+        display: inline-flex;
+    }
+}
