@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+footer {
+  position: relative;
+  background-color: #111111;
+  font-family: "Quicksand", serif;
+  overflow: hidden;
+  box-shadow: 0 -4px 8px 0 rgb(0, 0, 0);
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-image-left {
+  height: auto;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+footer .footer-image-right {
+  height: auto;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-bottom: 3px;
+}
+
+header {
+  background-color: #111111;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin-bottom: 1rem;
+}
+header nav {
+  background: #111111;
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: 100%;
+  /*======================================================
+                          Navbar
+  ======================================================*/
+}
+header nav .nav-wrapper {
+  margin: -4rem 0 -4rem 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header nav .nav-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 638px) {
+  header nav .nav-wrapper {
+    width: 100%;
+  }
+}
+header nav .logo {
+  margin-left: 28px;
+  height: auto;
+  justify-content: flex-start;
+  transition: transform 0.7s ease;
+}
+header nav .logo:hover {
+  transform: translateX(20px);
+}
+header nav .banner-logo {
+  height: 60%;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+  margin-top: -2px;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  height: 50px;
+  letter-spacing: 1px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  /* Animated Bottom Line */
+}
+header nav ul li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: rgb(28, 121, 184);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transform: scale(1.3);
+}
+header nav ul li a:before, header nav ul li a:after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(13, 26, 38);
+}
+header nav ul li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+header nav ul li a:after {
+  background: rgb(13, 26, 38);
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+header nav ul li a:hover:before {
+  background: rgb(13, 26, 38);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+header nav ul li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+@media (max-width: 640px) {
+  header nav #navbar ul {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  header nav #navbar ul {
+    display: flex;
+  }
+}
+
+main {
+  color: white;
+  margin: 0 1rem 0 1rem;
+}
+main h1,
+main h2 {
+  margin: 2.5rem;
+  text-align: center;
+}
+main #games-list {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+}
+main #games-list li {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #111111;
+  text-align: center;
+  justify-items: center;
+  font-weight: bold;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  box-shadow: 4px 4px 8px 0 rgb(0, 0, 0);
+}
+main #games-list li:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transform: scale(1.05);
+}
+main #games-list li .text {
+  padding-top: 1rem;
+  grid-row: 2;
+  justify-self: center;
+}
+main #games-list li .delete-button {
+  grid-row: 3;
+  justify-self: end;
+  background-color: #111111;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+main #games-list li .delete-button:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  background-color: rgb(28, 121, 184);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+main #games-list li .game-image {
+  grid-row: 1;
+  height: auto;
+  max-width: 360px;
+  max-height: 360px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  border-radius: 15px;
+}
+main #form-errors {
+  margin: 3rem;
+  text-align: center;
+}
+main form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto 3rem auto;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #111111;
+  text-align: center;
+  justify-items: center;
+  font-weight: bold;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  box-shadow: 4px 4px 8px 0 rgb(0, 0, 0);
+  width: 70%;
+}
+main form.form-group {
+  display: flex;
+  flex-direction: column;
+}
+main form .add-game-button {
+  background-color: white;
+  color: #111111;
+  border: none;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+main form .add-game-button:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  background-color: rgb(28, 121, 184);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transform: scale(1.05);
+}
+
+body {
+  background-image: url("/background/Rect-Light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: "Quicksand", serif;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=styles.css.map */

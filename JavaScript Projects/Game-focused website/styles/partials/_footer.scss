@@ -1,0 +1,29 @@
+footer {
+    position: relative;
+    background-color: #111111;
+    font-family: 'Quicksand', serif;
+    overflow: hidden;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 1);
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-image-left {
+        height: auto;
+        vertical-align: middle;
+        margin-right: 6px;
+        margin-bottom: 3px;
+    }
+
+    .footer-image-right {
+        height: auto;
+        vertical-align: middle;
+        margin-left: 6px;
+        margin-bottom: 3px;
+    }
+}

@@ -1,0 +1,16 @@
+@use "partials/footer";
+@use "partials/header";
+@use "partials/index";
+@use "partials/main";
+@use "partials/body";
+@use "partials/statistics";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+//whole-site
+* {
+    font-family: 'Quicksand', serif;
+    line-height: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

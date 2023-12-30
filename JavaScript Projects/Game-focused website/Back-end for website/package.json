@@ -1,0 +1,39 @@
+{
+    "name": "the_games_library",
+    "version": "1.0.0",
+    "description": "The games library API",
+    "author": "johanpck",
+    "license": "ISC",
+    "main": "app.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon -L app.ts --delay 3"
+    },
+    "nodemonConfig": {
+        "ext": "ts",
+        "delay": "3",
+        "execMap": {
+            "ts": "ts-node"
+        }
+    },
+    "dependencies": {
+        "body-parser": "^1.19.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2",
+        "swagger-jsdoc": "^6.1.0",
+        "swagger-ui-express": "^4.3.0",
+        "unique-names-generator": "^4.7.1",
+        "uuid": "^9.0.0",
+        "valivalue": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.19.2",
+        "@types/express": "^4.17.13",
+        "@types/mysql": "^2.15.20",
+        "@types/node": "^17.0.14",
+        "nodemon": "^2.0.15",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5"
+    }
+}
